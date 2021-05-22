@@ -1,0 +1,44 @@
+winer:
+  sms:
+    channel:
+      aliyun:
+        enable: true
+        accessKeyId: aliyunId
+        accessKeySecret: aliyunSecret
+        defaultSignName: autumn
+      tencent:
+        enable: false
+        appId: 2565455
+        appKey: d33sdsds
+      unicom:
+        enable: false
+        account: aa
+        password: aa
+        agent: octest
+        sign: 【测试】
+        serviceUrl: http://
+    template:
+      userLogin:
+        templateCode: SMS_001
+        signName: autumn
+        paramName: code
+        expire: 300
+        messageContent: 您的登录验证码为{code}，5分钟内有效，若非本人操作请忽略。
+      userRegister:
+        templateCode: SMS_002
+        signName: autumn
+        paramName: code
+        expire: 300
+        messageContent: 您的注册验证码为{code}，5分钟内有效，若非本人操作请忽略。
+      updatePassword:
+        templateCode: SMS_003
+        signName: autumn
+        paramName: code
+        expire: 300
+        messageContent: 您的密码变更验证码为{code}，5分钟内有效，若非本人操作请忽略。
+      commonVerification:
+        templateCode: SMS_004
+        signName: autumn
+        paramName: code
+        expire: 300
+        messageContent: 您的验证码为{code}，5分钟内有效，若非本人操作请忽略。
